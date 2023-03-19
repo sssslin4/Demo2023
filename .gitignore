@@ -18,9 +18,9 @@ target/
 *.iws
 *.iml
 *.ipr
-/test/
 
-/cstimer/
+**/test/**
+**/cstimer/**
 
 ### NetBeans ###
 /nbproject/private/
