@@ -20,6 +20,8 @@ target/
 *.ipr
 /test/
 
+/cstimer/
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
