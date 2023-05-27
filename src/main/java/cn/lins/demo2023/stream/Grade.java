@@ -2,14 +2,19 @@ package cn.lins.demo2023.stream;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NonNull;
+import lombok.ToString;
+
+import javax.validation.constraints.Null;
 
 /*
  * 成绩实体类
  * */
 @Data
 @AllArgsConstructor
-public class Grade {
+public class Grade implements Cloneable{
     //学号
+    @Null
     private String stuNo;
     //学生名
     private String stuName;
@@ -21,4 +26,13 @@ public class Grade {
     private Double mathScore;
     //英语成绩
     private Double englishScore;
+
+    public String toString(){
+        return "{stuNo:"+stuNo+",stuName:"+stuName+"}";
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
