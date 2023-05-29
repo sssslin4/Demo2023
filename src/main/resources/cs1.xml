@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book id="1001">
+        <name>语文</name>
+        <info>一二三四五</info>
+    </book>
+    <book id="1002">
+        <name>数学</name>
+        <info>甲乙丙丁</info>
+    </book>
+</books>
